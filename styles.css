@@ -70,7 +70,7 @@ pre {
     padding: 1lh;
     border-radius: 8px;
     color: var(--code);
-    background: linear-gradient(dimgray, var(fuchsia));
+    background: linear-gradient(dimgray, fuchsia);
     margin: 1vw;
 }
 
