@@ -1,5 +1,15 @@
+
+:root {
+    --background: black;
+    --edge: white;
+    --text: fuchsia;
+    --code: white;
+    --glow: pink;
+}
+
 * {
     font-family: sans-serif;
+    color: var(--text);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,6 +17,7 @@
 
 body {
     padding: 1vh 1vw;
+    background: var(--background);
 }
 
 .container {
@@ -22,18 +33,11 @@ body {
 
 figure {
     position: relative;
-    border: dashed black 3px;
+    border: dashed var(--edge) 3px;
 }
 
-figcaption {
-    position: absolute;
-    top: -1lh;
-    min-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background: white;
-    border: solid black 1px;
-    border-radius: 8px;
+figure:hover {
+    box-shadow: var(--glow) 0 0 3vw, inset var(--glow) 0 0 1vw;
 }
 
 figure > * {
@@ -44,12 +48,29 @@ figure > p {
     padding-top: 1.5lh;
 }
 
+figcaption {
+    position: absolute;
+    top: -1lh;
+    min-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    font-size: 150%;
+    font-weight: bold;
+    padding: 0.25lh 0.5vw;
+    
+    background: var(--background);
+    border: solid var(--edge) 2px;
+    border-radius: 8px;
+}
+
 pre {
     font-family: monospace;
     font-size: 125%;
     padding: 1lh;
     border-radius: 8px;
-    background: gainsboro;
+    color: var(--code);
+    background: linear-gradient(dimgray, var(fuchsia));
     margin: 1vw;
 }
 
