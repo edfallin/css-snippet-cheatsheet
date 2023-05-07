@@ -17,6 +17,27 @@ body {
 
 .card {
     flex: 0 0 100%;
+    padding: 1lh;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: -0.75lh;
+    min-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+figure > * {
+    padding: 0.5lh;
+}
+
+figure > p {
+    padding-top: 1.5lh;
 }
 
 @media screen and (min-width: 768px) {
