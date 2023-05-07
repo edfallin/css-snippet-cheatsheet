@@ -17,19 +17,23 @@ body {
 
 .card {
     flex: 0 0 100%;
-    padding: 1lh;
+    padding: 2lh 1vw;
 }
 
 figure {
     position: relative;
+    border: dashed black 3px;
 }
 
 figcaption {
     position: absolute;
-    top: -0.75lh;
+    top: -1lh;
     min-width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    background: white;
+    border: solid black 1px;
+    border-radius: 8px;
 }
 
 figure > * {
@@ -38,6 +42,15 @@ figure > * {
 
 figure > p {
     padding-top: 1.5lh;
+}
+
+pre {
+    font-family: monospace;
+    font-size: 125%;
+    padding: 1lh;
+    border-radius: 8px;
+    background: gainsboro;
+    margin: 1vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -52,15 +65,3 @@ figure > p {
     }
 }
 
-
-/* region Delete these */
-
-header, main, footer {
-    border: dotted dodgerblue 0.5px;
-}
-
-figure, figcaption, pre {
-    border: dotted darkred 0.5px;
-}
-
-/* endregion Delete these */
